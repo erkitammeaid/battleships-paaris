@@ -1,23 +1,16 @@
-.bs{
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-}
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
 
-#gridColumn{
+  #container {
     display: grid;
-    grid: 1;
-    height: 15px;
-    width: 15px;
-    color: black;
-    border: black 1px;
-}
+    grid-template-rows: repeat(var(--grid-rows), 4rem);
+    grid-template-columns: repeat(var(--grid-cols), 4rem);
+  }
 
-#gridRow{
-    display: grid;
-    grid: 1;
-    height: 15px;
-    width: 15px;
-    color: black;
-    border: black 1px;
-}
+  .grid-item {
+    padding: 1em;
+    border: 1px solid black;
+    text-align: center;
+  }
