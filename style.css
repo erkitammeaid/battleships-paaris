@@ -1,0 +1,16 @@
+#gridColumn{
+    display: grid;
+    grid: 1;
+    height: 15px;
+    width: 15px;
+    color: black;
+    border: black solid 1px;
+}
+#gridRow{
+    display: grid;
+    grid: 1;
+    height: 15px;
+    width: 15px;
+    color: black;
+    border: black solid 1px;
+}
