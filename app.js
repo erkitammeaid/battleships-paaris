@@ -10,8 +10,9 @@ function makeRows(rows, cols) {
 };
 makeRows(10, 10);
 
+
 const opponentContainer = document.getElementById("container")
 const containerClone = opponentContainer.cloneNode(true)
-
+gameboard.append(opponentContainer)
 const enemy = document.body.appendChild(containerClone)
 enemy.id = "opponentContainer"

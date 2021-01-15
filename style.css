@@ -1,22 +1,26 @@
-:root {
+:root{
     --grid-cols: 1;
     --grid-rows: 1;
-  }
-  #container {
+}
+
+  #container{
     display: grid;
     width: 640px;
     grid-template-rows: repeat(var(--grid-rows), 4rem);
     grid-template-columns: repeat(var(--grid-cols), 4rem);
-  }
+    justify-content: flex-start;
+}
+
 #opponentContainer{
     display: grid;
+    width: 640px;
     grid-template-rows: repeat(var(--grid-rows), 4rem);
     grid-template-columns: repeat(var(--grid-cols), 4rem);
     justify-content: flex-end;
-    width: 640px;
 }
+
   .grid-item {
     padding: 1em;
     border: 1px solid black;
     text-align: center;
-  }
+}
