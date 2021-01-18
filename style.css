@@ -1,22 +1,11 @@
-:root{
-    --grid-cols: 1;
-    --grid-rows: 1;
-}
-
-  #container{
+.game-board{
     display: grid;
     width: 640px;
-    grid-template-rows: repeat(var(--grid-rows), 4rem);
-    grid-template-columns: repeat(var(--grid-cols), 4rem);
+    grid-template-rows: repeat(10, 4rem);
+    grid-template-columns: repeat(10, 4rem);
     justify-content: flex-start;
-}
-
-#opponentContainer{
-    display: grid;
-    width: 640px;
-    grid-template-rows: repeat(var(--grid-rows), 4rem);
-    grid-template-columns: repeat(var(--grid-cols), 4rem);
-    justify-content: flex-end;
+    margin: auto;
+    padding: 60px;
 }
 
   .grid-item {

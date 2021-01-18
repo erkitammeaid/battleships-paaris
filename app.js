@@ -1,18 +1,14 @@
-const container = document.getElementById("container");
-
-function makeRows(rows, cols) {
-    container.style.setProperty('--grid-rows', rows);
-    container.style.setProperty('--grid-cols', cols);
+function makeRows(rows, cols, board) {
+    board.style.setProperty('--grid-rows', rows);
+    board.style.setProperty('--grid-cols', cols);
     for (c = 0; c < (rows * cols); c++) {
         let cell = document.createElement("div");
-        container.appendChild(cell).className = "grid-item";
+        board.appendChild(cell).className = "grid-item";
     };
 };
-makeRows(10, 10);
 
+const playerGameBoard = document.getElementById("player-game-board");
+const opponentGameBoard = document.getElementById("opponent-game-board");
 
-const opponentContainer = document.getElementById("container")
-const containerClone = opponentContainer.cloneNode(true)
-gameboard.append(opponentContainer)
-const enemy = document.body.appendChild(containerClone)
-enemy.id = "opponentContainer"
+makeRows(10, 10, playerGameBoard);
+makeRows(10, 10, opponentGameBoard);
